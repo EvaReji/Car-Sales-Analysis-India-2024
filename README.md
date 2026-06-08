@@ -1,22 +1,22 @@
-# Car Sales Analysis – India 2024
+# 🚗 Car Sales Analysis – India 2024
 ### Power BI Dashboard Project
 
 ---
 
-## Objective
+## 📌 Objective
 Analyze Indian car market performance in 2024 across brands, models, segments, and body types to identify sales trends, market leaders, and growth opportunities.
 
 ---
 
-## Tools Used
-- Power BI
-- Power Query
-- DAX
-- Microsoft Excel
+## 🛠️ Tools Used
+- **Power BI** — Dashboard & Visualizations
+- **Power Query** — Data Cleaning & Transformation
+- **DAX** — Measures & Calculations
+- **Microsoft Excel** — Data Source
 
 ---
 
-## Dataset Overview
+## 📊 Dataset Overview
 
 | Field | Details |
 |-------|---------|
@@ -29,61 +29,90 @@ Analyze Indian car market performance in 2024 across brands, models, segments, a
 
 ---
 
-## Data Model
+## 🗂️ Data Model
+Designed using a **Star Schema** for optimal Power BI performance.
 
-Designed using a star schema for optimal Power BI performance.
+```
+FACT_Sales (Central Fact Table)
+    ├── DIM_Calendar
+    ├── DIM_Brand
+    ├── DIM_Segment
+    └── DIM_BodyType
+```
 
-- 1 Fact Table (FACT_Sales) containing all transactional records
-- 4 Dimension Tables: DIM_Calendar, DIM_Brand, DIM_Segment, DIM_BodyType
-- Monthly columns unpivoted using Power Query for time-series analysis
-- All relationships: One-to-Many (Dimension to Fact)
+- Monthly columns **unpivoted** using Power Query for time-series analysis
+- All relationships: **One-to-Many** (Dimension → Fact)
 
 ---
 
-## DAX Measures
+## 🧮 DAX Measures
 
-**Core Metrics**
-- Total Sales, Total Brands, Total Models
-- Average Sales per Model
+### Core Metrics
+| Measure | Description |
+|---------|-------------|
+| Total Sales | Sum of all units sold |
+| Total Brands | Count of distinct brands |
+| Total Models | Count of distinct models |
+| Avg Sales per Model | Average monthly performance |
 
-**Trend Analysis**
-- MoM Change, Previous Month Sales
-- Growing Models, Declining Models
+### Trend Analysis
+| Measure | Description |
+|---------|-------------|
+| MoM Change | Month-over-month growth % |
+| Previous Month Sales | Comparison baseline |
+| Growing Models | Count of models with positive MoM |
+| Declining Models | Count of models with negative MoM |
 
-**Ranking**
+### Rankings
 - Top Brand, Top Model, Top Segment, Top Quarter
 
 ---
 
-## Key Insights
-
-- Total sales reached 4 million units across 14 brands
-- Maruti leads with 46.77% market share
-- Punch is the top-selling model
-- SUVs dominate body type distribution at 50.44% of total sales
-- October is the peak sales month, driven by festive season demand
-- Top 4 brands contribute nearly 80% of total market share
-- S-Presso and Tucson recorded the highest sales decline
-
----
-
-## Business Recommendations
-
-- Focus corrective actions on consistently declining models
-- Leverage festive season demand for targeted marketing campaigns
-- Explore growth opportunities in the premium segment
-- Monitor emerging EV adoption trends
+## 💡 Key Insights
+- 📈 Total sales reached **4 million units** across 14 brands
+- 🏆 **Maruti leads** with **46.77% market share**
+- 🚙 **Punch** is the top-selling model
+- 🚐 **SUVs dominate** at **50.44%** of total sales
+- 🎉 **October** is peak sales month — driven by festive season
+- 📊 Top 4 brands contribute **nearly 80%** of total market share
+- 📉 S-Presso and Tucson recorded the highest sales decline
 
 ---
 
-## Files
-
-- `Car_Sales_2024.pbix` — Power BI dashboard file
-- `README.md` — Project documentation
+## 📋 Business Recommendations
+- 🔧 Focus corrective actions on consistently declining models
+- 🎯 Leverage festive season demand for targeted campaigns
+- 💎 Explore growth opportunities in the premium segment
+- ⚡ Monitor emerging EV adoption trends
 
 ---
 
-## Author
+## 📸 Screenshots
 
-**Eva Reji**
-GitHub: github.com/EvaReji | LinkedIn: linkedin.com/in/eva-reji
+### Executive Summary
+![Executive Summary](screenshots/executive_summary.png)
+
+### Segment Analysis
+![Segment Analysis](screenshots/segment_analysis.png)
+
+### Brand Deep Dive
+![Brand Deep Dive](screenshots/brand_deepdive.png)
+
+---
+
+## 📁 Files
+
+| File | Description |
+|------|-------------|
+| `Car_Sales_2024.pbix` | Power BI dashboard file |
+| `README.md` | Project documentation |
+
+---
+
+## 👩‍💻 Author
+
+**Eva Reji** — Data Analytics | Power BI | DAX
+
+- 🐙 **GitHub:** [github.com/EvaReji](https://github.com/EvaReji)
+- 💼 **LinkedIn:** [linkedin.com/in/eva-reji](https://linkedin.com/in/eva-reji)
+- 📧 **Email:** evareji01@gmail.com
