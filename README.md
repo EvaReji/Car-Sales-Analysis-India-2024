@@ -92,11 +92,8 @@ FACT_Sales (Central Fact Table)
 ### Executive Summary
 ![Executive Summary](screenshots/executive_summary.png)
 
-### Segment Analysis
-![Segment Analysis](screenshots/segment_analysis.png)
-
-### Brand Deep Dive
-![Brand Deep Dive](screenshots/brand_deepdive.png)
+### Detailed Analysis
+![Detailed Analysis](screenshots/detailed_analysis.png)
 
 ---
 
